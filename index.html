@@ -8,71 +8,75 @@
         * {margin: 0; padding: 0; box-sizing: border-box;}
         body {
             font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            background: #0d1117;
             color: white;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
+            line-height: 1.6;
         }
         header {
-            margin-top: 50px;
-            animation: fadeInDown 1s ease-in-out;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            padding: 80px 20px;
+            text-align: center;
         }
         header h1 {
-            font-size: 2.8em;
-            margin-bottom: 10px;
-            color: #00d4ff;
+            font-size: 3em;
+            margin-bottom: 15px;
         }
         header p {
             font-size: 1.2em;
-            opacity: 0.85;
+            opacity: 0.9;
         }
         .btn {
             display: inline-block;
-            margin-top: 25px;
+            margin-top: 20px;
             padding: 12px 28px;
-            background: #00d4ff;
-            color: #0f2027;
+            background: #fff;
+            color: #0072ff;
             border-radius: 30px;
             font-weight: bold;
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: 0.3s;
         }
         .btn:hover {
-            background: #fff;
-            color: #0f2027;
-            transform: scale(1.05);
+            background: #00c6ff;
+            color: white;
         }
         section {
-            margin-top: 60px;
-            max-width: 800px;
-            animation: fadeIn 1.5s ease-in-out;
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
         }
         section h2 {
-            color: #00d4ff;
-            margin-bottom: 15px;
+            color: #00c6ff;
+            text-align: center;
+            margin-bottom: 20px;
         }
         section p {
-            line-height: 1.6;
-            font-size: 1.05em;
-            opacity: 0.9;
+            text-align: center;
+            opacity: 0.85;
+            margin-bottom: 40px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #161b22;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
         }
         footer {
-            margin-top: auto;
+            background: #161b22;
             padding: 15px;
+            text-align: center;
             font-size: 0.9em;
             opacity: 0.6;
-        }
-        @keyframes fadeIn {
-            from {opacity: 0; transform: translateY(20px);}
-            to {opacity: 1; transform: translateY(0);}
-        }
-        @keyframes fadeInDown {
-            from {opacity: 0; transform: translateY(-20px);}
-            to {opacity: 1; transform: translateY(0);}
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -80,19 +84,33 @@
     <header>
         <h1>🚀 Airdrop Fund</h1>
         <p>Kumpulkan crypto rewards dari berbagai project blockchain</p>
-        <a class="btn" href="#join">Ikut Sekarang</a>
+        <a href="#join" class="btn">Mulai Sekarang</a>
     </header>
+
+    <section>
+        <h2>Apa itu Airdrop Fund?</h2>
+        <p>Airdrop Fund adalah platform yang membantu Anda menemukan, bergabung, dan mendapatkan hadiah dari berbagai program airdrop crypto terbaru.</p>
+        
+        <div class="features">
+            <div class="card">
+                <h3>💰 Dapatkan Rewards</h3>
+                <p>Setiap minggu kami bagikan info airdrop yang menguntungkan.</p>
+            </div>
+            <div class="card">
+                <h3>⚡ Cepat & Mudah</h3>
+                <p>Ikuti langkah sederhana untuk klaim hadiah Anda.</p>
+            </div>
+            <div class="card">
+                <h3>🔒 Aman</h3>
+                <p>Informasi dan data Anda terlindungi dengan enkripsi modern.</p>
+            </div>
+        </div>
+    </section>
 
     <section id="join">
         <h2>Cara Bergabung</h2>
-        <p>
-            Bergabung dengan Airdrop Fund itu mudah!  
-            1️⃣ Daftar menggunakan email atau wallet crypto.  
-            2️⃣ Ikuti langkah-langkah verifikasi.  
-            3️⃣ Mulai kumpulkan rewards setiap minggu.  
-            Website ini didukung penuh oleh teknologi GitHub Pages & Cloudflare
-            untuk kecepatan dan keamanan terbaik.
-        </p>
+        <p>Isi form pendaftaran dan mulai kumpulkan crypto rewards hari ini.</p>
+        <a href="#" class="btn">Daftar Sekarang</a>
     </section>
 
     <footer>
